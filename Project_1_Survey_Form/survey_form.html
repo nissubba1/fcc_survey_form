@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form: In-Person vs. Online School Experience</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Survey Form: In-Person vs. Online School Experience</h1>
+      <p id="description">
+        Thank you for taking the time to participate in our survey. Your
+        feedback is important as we seek to understand preferences, experiences,
+        and perspectives on in-person vs. online schooling. This survey consists
+        of 10 questions covering various aspects of both schooling formats.
+        Whether you've experienced one, both, or have a preference for a
+        particular mode of learning, we value your input. Your responses will
+        help us to better understand the advantages and challenges of each
+        format and potentially guide improvements in educational approaches.
+      </p>
+      <form id="survey-form" action="#" method="POST">
+        <fieldset class="person-bio">
+          <label id="name-label" for="name"
+            >Full Name
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="John Doe"
+          /></label>
+          <label id="email-label" for="email"
+            >Email
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="johndoe101@gmail.com"
+            />
+          </label>
+          <label id="number-label" for="number"
+            >Age
+            <input
+              type="number"
+              id="number"
+              name="age"
+              required
+              min="7"
+              max="100"
+              placeholder="20"
+          /></label>
+
+          <label
+            >Current Level of Education
+            <select id="dropdown">
+              <option>Please select one</option>
+              <option>Elementary School</option>
+              <option>Middle School</option>
+              <option>High School</option>
+              <option>College/University</option>
+              <option>Graduate Studies</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset class="schooling-type">
+          <legend>
+            Have you experienced both in-person and online schooling?
+          </legend>
+          <label
+            ><input type="radio" value="yes" name="type-of-school" />Yes</label
+          >
+          <label
+            ><input type="radio" value="no" name="type-of-school" />No</label
+          >
+        </fieldset>
+        <fieldset class="school-format">
+          <legend>Which schooling format do you currently perfer?</legend>
+          <label
+            ><input
+              type="radio"
+              value="in-person"
+              name="perfer-format"
+            />In-person</label
+          >
+          <label
+            ><input
+              type="radio"
+              value="online"
+              name="perfer-format"
+            />Online</label
+          >
+          <label
+            ><input type="radio" value="no-preference" name="perfer-format" />No
+            preference</label
+          >
+        </fieldset>
+        <fieldset class="in-person-perference">
+          <legend>What do you like most about in-person schooling?</legend>
+          <label
+            ><input type="checkbox" value="1" name="in-person-choice" />Direct
+            interaction with teachers and peers</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              value="2"
+              name="in-person-choice"
+            />Structured daily routine</label
+          >
+          <label
+            ><input type="checkbox" value="3" name="in-person-choice" />Access
+            to school facilities (e.g., library, laboratories)</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              value="4"
+              name="in-person-choice"
+            />Extracurricular activities</label
+          >
+          <label
+            ><input type="checkbox" value="5" name="in-person-choice" />Other:
+            [Please specify]</label
+          >
+        </fieldset>
+        <fieldset>
+          <label class="textarea-label"
+            >What challenges have you faced in in-person schooling?
+            <textarea
+              name="in-person-challenges"
+              rows="4"
+              cols="10"
+              placeholder="Please write you challenges here"
+            ></textarea>
+          </label>
+        </fieldset>
+        <fieldset class="online-preference">
+          <legend>What do you like most about online schooling?</legend>
+
+          <label
+            ><input type="checkbox" value="1" name="online-choice" />Flexibility
+            in schedule</label
+          >
+          <label
+            ><input type="checkbox" value="2" name="online-choice" />Comfort of
+            learning from home</label
+          >
+          <label
+            ><input type="checkbox" value="3" name="online-choice" />Access to a
+            wider range of resources online</label
+          >
+          <label
+            ><input type="checkbox" value="4" name="online-choice" />Ability to
+            self-pace my learning</label
+          >
+          <label
+            ><input type="checkbox" value="5" name="online-choice" />Other:
+            [Please specify]</label
+          >
+        </fieldset>
+        <fieldset>
+          <label class="textarea-label"
+            >What challenges have you faced with online schooling?
+            <textarea
+              name="online-challenges"
+              rows="4"
+              cols="10"
+              placeholder="Please write you challenges here"
+            ></textarea>
+          </label>
+          <label class="textarea-label"
+            >Please share any additional comments or suggestions regarding
+            in-person vs. online schooling.
+            <textarea
+              name="more-comment"
+              rows="4"
+              cols="10"
+              placeholder="Please write any comments and/or suggestions here"
+            ></textarea>
+          </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+      <p id="description2">
+        Thank you very much for participating in this survey. Your insights are
+        invaluable to us as we explore the dynamics of in-person and online
+        schooling. We appreciate your time and effort in sharing your
+        experiences and preferences.
+      </p>
+
+      <footer>
+        <p class="footer">
+          Made by Nishan Subba. Project: Survey Form as required by
+          FreeCodeCamp. Completed 02/09/2024
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
